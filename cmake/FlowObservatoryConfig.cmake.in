@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(Threads)
+
+include("${CMAKE_CURRENT_LIST_DIR}/FlowObservatoryTargets.cmake")
+
+set(FlowObservatory_VERSION "@PROJECT_VERSION@")
+set(FlowObservatory_VERSION_MAJOR "@PROJECT_VERSION_MAJOR@")
+set(FlowObservatory_VERSION_MINOR "@PROJECT_VERSION_MINOR@")
+set(FlowObservatory_VERSION_PATCH "@PROJECT_VERSION_PATCH@")
+set(FlowObservatory_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_INCLUDEDIR@")
+
+check_required_components(FlowObservatory)
