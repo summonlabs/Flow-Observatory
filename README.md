@@ -1,7 +1,7 @@
 # Flow Observatory
 
 Flow Observatory is a vendor-neutral **runtime that observes per-flow lifecycle
-and resource consumption** for a fabric OS. It ingests evidence produced by
+and resource consumption**. It ingests evidence produced by
 other systems, reconciles that evidence, and answers questions about flows with
 an explicit statement of what is known, what is unknown, and why.
 
